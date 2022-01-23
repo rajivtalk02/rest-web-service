@@ -18,4 +18,16 @@ public class UserService {
 		return this.userDao.getUsers();
 
 	}
+
+	public void addUser(User user) {
+		this.userDao.addUser(user);
+	}
+
+	public void deleteUser(int userId) {
+		this.userDao.deleteUser(userId);
+	}
+	
+	public void updateUserName(String userName) {
+		this.userDao.updateUser(userName);
+	}
 }
