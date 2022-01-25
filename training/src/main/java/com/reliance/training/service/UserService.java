@@ -27,7 +27,7 @@ public class UserService {
 		this.userDao.deleteUser(userId);
 	}
 	
-	public void updateUserName(String userName) {
-		this.userDao.updateUser(userName);
+	public void updateUserName(User user) {
+		this.userDao.updateUser(user);
 	}
 }

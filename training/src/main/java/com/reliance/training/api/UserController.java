@@ -36,9 +36,9 @@ public class UserController {
 		this.userService.deleteUser(userId);
 	}
 
-	@PutMapping("/user/{userName}")
-	public void updateUserName(@PathVariable String userName) {
-		this.userService.updateUserName(userName);
+	@PutMapping("/user")
+	public void updateUserName(@RequestBody User user) {
+		this.userService.updateUserName(user);
 	}
 
 }

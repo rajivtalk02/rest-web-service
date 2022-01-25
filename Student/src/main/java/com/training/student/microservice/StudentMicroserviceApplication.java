@@ -1,14 +1,13 @@
-package com.reliance.training;
+package com.training.student.microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Component;
 
 @SpringBootApplication
-public class TrainingApplication {
+public class StudentMicroserviceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TrainingApplication.class, args);
+		SpringApplication.run(StudentMicroserviceApplication.class, args);
 	}
 
 }
