@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.reliance.training.dao.StudentDao;
+import com.reliance.training.dao.impl.StudentDaoImpl;
 import com.reliance.training.model.Course;
 import com.reliance.training.model.Student;
 
@@ -13,7 +13,7 @@ import com.reliance.training.model.Student;
 public class StudentService {
 
 	@Autowired
-	private StudentDao studentDao;
+	private StudentDaoImpl studentDao;
 
 	public List<Student> getStudent() {
 

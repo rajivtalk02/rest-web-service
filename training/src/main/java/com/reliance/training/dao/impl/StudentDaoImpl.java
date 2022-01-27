@@ -1,15 +1,16 @@
-package com.reliance.training.dao;
+package com.reliance.training.dao.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import com.reliance.training.dao.IStudent;
 import com.reliance.training.model.Course;
 import com.reliance.training.model.Student;
 
 @Component
-public class StudentDao {
+public class StudentDaoImpl implements IStudent {
 
 	private static List<Student> studentList = new ArrayList<Student>();
 	private static List<Course> courseList = new ArrayList<Course>();
